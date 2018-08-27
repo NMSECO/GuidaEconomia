@@ -1,0 +1,49 @@
+---
+title: <a><img src="https://fontmeme.com/permalink/180811/b785b5405b09478e730c902799c9d2dc.png" alt="no-mans-sky-font" border="0" size="40"></a>
+author: 
+date: 
+output:
+  
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    
+    css: "custom.css"
+  pdf_document: default
+  html_document:
+    df_print: paged
+    always_allow_html: yes
+---
+<style type="text/css">
+h1.title {
+  font-size: 38px;
+}
+</style>
+
+## Nota del traduttore
+Questa guida è stata interamente scritta dall'utente reddit "u/SeansCheckShirts" e pubblicata sul subreddit "r/NoMansSkyTheGame".
+
+A lui ovviamente i ringraziamenti per il lavoro di ricerca svolto e i diritti d'autore.
+
+Riconoscendone la potenziale utilità, soprattutto per i nuovi giocatori, ho quindi deciso di tradurla e condividerla con la community italiana. 
+
+Ringrazio moltissimo Danilo, che si è poi preso la grossa responsabilità di continuare la traduzione e lasciare a me il compito di impaginare.
+
+L'autore, contattato tramite Reddit, si è dimostrato d'accordo con la mia proposta:
+<blockquote>
+Knowledge is meant to be shared :)
+</blockquote>
+
+La guida copre alcuni aspetti dell'economia del gioco che non vengono descritti, nello stesso, in modo apprezzabile.
+
+Speriamo, con questo breve lavoro, di creare una risorsa importante sia per i neofiti, sia per giocatori da D1 che vorranno approfondire l'aspetto economico del gioco, buona lettura!
+<hr>
+<div style="page-break-after: always;"></div>
+## 1. Introduzione
+Il mio post originale sull'economia di No Man's sky dopo l'aggiornamento Atlas Rises è ora sensibilmente datato ed è stato archiviato. Ho quindi pensato fosse giunto il momento di aggiornare la guida e di fornire un po' di informazioni che possano aiutare giocatori vecchi e nuovi.
+
+Come detto, le mie conclusioni si basano sì su una ricerca approfondita, ma su una piccola quantitù di dati. Sebbene sia fiducioso nei risultati, rimango sempre aperto ad altre opinioni o scoperte. Se siete in possesso di qualsiasi informazione, a sostegno o contradditoria, vi prego di condividerla.
+
+Ora è giunto il momento di sedervi, rilassarvi e prepararvi ad oltre 3,000 parole che un certo tizio, che si è chiamato come i vestiti di un altro tizio, ha scritto riguardo il funzionamento dell'economia di un videogioco.
+<hr>
+<div style="page-break-after: always;"></div>

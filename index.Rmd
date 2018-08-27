@@ -1,0 +1,25 @@
+---
+title: <a><img src="https://fontmeme.com/permalink/180811/b785b5405b09478e730c902799c9d2dc.png" alt="no-mans-sky-font" border="0" size="40"></a>
+output:
+  
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: false
+    css: "custom.css"
+  pdf_document: default
+  html_document:
+    df_print: paged
+    always_allow_html: yes
+---
+<style type="text/css">
+h1.title {
+  font-size: 38px;
+}
+</style>
+
+#<a href="introduzione.html"> Introduzione </a>
+
+#<a href="Projects/EDA.html"> Analisi di dati economici </a>
+
+#<a href="Projects/Riccanza.html"> Analisi della ricchezza </a>

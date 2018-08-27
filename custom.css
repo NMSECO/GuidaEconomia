@@ -1,0 +1,24 @@
+
+body {
+  min-height: 30
+  display: block;
+  position: left;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+body::after {
+  background: url("https://res.cloudinary.com/teepublic/image/private/s--TSm376MK--/t_Preview/b_rgb:ffffff,c_lpad,f_jpg,h_630,q_90,w_1200/v1494498400/production/designs/1596425_1.jpg");
+  content: "";
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
