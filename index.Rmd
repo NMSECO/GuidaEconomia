@@ -1,5 +1,5 @@
 ---
-title: <a><img src="https://fontmeme.com/permalink/180811/b785b5405b09478e730c902799c9d2dc.png" alt="no-mans-sky-font" border="0" size="40"></a>
+title: Guida all'economia di No Man's Sky
 output:
   
   prettydoc::html_pretty:
@@ -18,8 +18,7 @@ h1.title {
 }
 </style>
 
-#<a href="introduzione.html"> Introduzione </a>
+#<a href="NMSECORmd.html"> Guida all'economia (versione web)</a>
+#<a href="PDF/NMS-ECO.pdf"> Guida all'economia (versione PDF)</a>
 
-#<a href="Projects/EDA.html"> Analisi di dati economici </a>
 
-#<a href="Projects/Riccanza.html"> Analisi della ricchezza </a>

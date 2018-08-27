@@ -1,0 +1,730 @@
+---
+title: Guida all'economia di No Man's Sky
+author: "Autore originale: u/SeansCheckShirts, Traduttori: Francesco Tranquillo, Danilo Dell'Accio"
+date: "28 agosto 2018"
+output:
+  
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: true
+    css: "custom.css"
+  pdf_document: default
+  html_document:
+    df_print: paged
+    always_allow_html: yes
+---
+<style type="text/css">
+h1.title {
+  font-size: 38px;
+}
+</style>
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\newpage
+<div style="page-break-after: always;"></div>
+
+\tableofcontents
+
+
+
+
+<div style="page-break-after: always;"></div>
+
+
+
+# Nota del traduttore
+Questa guida è stata interamente scritta dall'utente reddit "u/SeansCheckShirts" e pubblicata sul subreddit "r/NoMansSkyTheGame".
+
+A lui ovviamente i ringraziamenti per il lavoro di ricerca svolto e i diritti d'autore.
+
+Riconoscendone la potenziale utilità, soprattutto per i nuovi giocatori, ho quindi deciso di tradurla e condividerla con la community italiana. 
+
+Ringrazio moltissimo Danilo, che si è poi preso la grossa responsabilità di continuare la traduzione e lasciare a me il compito di impaginare.
+
+L'autore, contattato tramite Reddit, si è dimostrato d'accordo con la mia proposta:
+<blockquote>
+Knowledge is meant to be shared :)
+</blockquote>
+
+La guida copre alcuni aspetti dell'economia del gioco che non vengono descritti, nello stesso, in modo apprezzabile.
+
+Speriamo, con questo breve lavoro, di creare una risorsa importante sia per i neofiti, sia per giocatori da D1 che vorranno approfondire l'aspetto economico del gioco, buona lettura!
+<hr>
+<div style="page-break-after: always;"></div>
+## 1. Introduzione
+Il mio post originale sull'economia di No Man's sky dopo l'aggiornamento Atlas Rises è ora sensibilmente datato ed è stato archiviato. Ho quindi pensato fosse giunto il momento di aggiornare la guida e di fornire un po' di informazioni che possano aiutare giocatori vecchi e nuovi.
+
+Come detto, le mie conclusioni si basano sì su una ricerca approfondita, ma su una piccola quantitù di dati. Sebbene sia fiducioso nei risultati, rimango sempre aperto ad altre opinioni o scoperte. Se siete in possesso di qualsiasi informazione, a sostegno o contradditoria, vi prego di condividerla.
+
+Ora è giunto il momento di sedervi, rilassarvi e prepararvi ad oltre 3,000 parole che un certo tizio, che si è chiamato come i vestiti di un altro tizio, ha scritto riguardo il funzionamento dell'economia di un videogioco.
+
+<hr>
+<div style="page-break-after: always;"></div>
+#Valore Base (VB) e Prezzo Medio Galattico (PMG)
+
+Tutti gli oggetti nel gioco hanno due valori standard; Il valore base e la media galattica.
+
+Il valore base di un oggetto è il prezzo mostrato nel pannello delle informazioni quando nell’inventario vi si sposta sopra il cursore. Per esempio, il pannello informazioni per una Reliquia Gek mostrerà il suo valore come “Ʉ23,375 per unità”.
+I prezzi medi galattici invece non sono mai mostrati esplicitamente nel gioco, ma sono le cifre sulle quali sono basate le percentuali positive/negative mostrate nei terminali di commercio e negli inventari dei mercanti.
+
+Il <b>prezzo medio galattico (MG)</b> è ottenuto moltiplicando il valore base (VB) per una certa quantità; in gioco gli oggetti sono classificati in tre gruppi, ognuno con un differente rapporto tra MG e VB.
+
+* <b>Gruppo 1</b>: Prodotti (quelli con uno stack di 5 unità per slot di exotuta, inclusi gli oggetti craftati)
+
+<center>$$MG=1.1\ast VB\quad (110\%\quad di\quad VB)$$</center>
+
+* <b>Gruppo 2</b>: Sostanze (quelli con una stack da 250 unità per slot di exotuta, come elementi, piante e scarti)
+
+<center>$$MG=1.125\ast VB\quad (112.5\%\quad di\quad VB)$$</center>
+
+* <b>Gruppo 3</b>: Beni di scambio (vedi nota sotto)
+
+<center>$$MG=1.05\ast VB\quad (105\%\quad di\quad VB)$$</center>
+
+
+><b>Nota</b>: I beni di scambio sono articoli commerciali specifici per l’economia del gioco, reperibili in ogni sistema abitato (come le Fibre Superconduttrici, Alberi Motore Olografici, Nuclei di Fusione, ecc). L’argomento sarà trattato approfonditamente nel capitolo 2.
+
+
+È possibile notare che le percentuali di confronto tra i prezzi galattici medi dei terminali di commercio sono indicate in rosso, bianco o verde. Questo ci dice che:
+
+* <b>Verde</b> significa che il prezzo è almeno il 10% superiore o inferiore rispetto alla Media Galattica in tuo favore. Punta al verde per comprare a prezzi scontati o rivendere a prezzi più alti.
+
+* <b>Bianco</b> significa che il prezzo e fra il 10% in meno e il 10% in più rispetto la MG. Prezzi quindi molto vicini alla media, non ideali per le compravendite che puntano al profitto.
+
+* <b>Rosso</b> significa che il prezzo è almeno il 10% superiore o inferiore rispetto la Media Galattica a favore del terminale. Evita assolutamente il rosso durante le compravendite.
+
+><b>Nota</b>: mentre non è possibile alterare in alcun modo il Valore Base o la Media Galattica, le tue azioni possono cambiare il valore commerciale di un oggetto in un sistema planetario. Questo argomento viene approfondito nel paragrafo 5c
+
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+#2.Tipi di economia & Domanda e Offerta
+
+Ogni sistema abitato ha un proprio tipo di economia così come una sua forza economica.
+Ci sono sette differenti tipi di economie:  Materiali avanzati, Manifattura, Estrazione mineraria, Generazione di combustibile, Scientifico, Tecnologia, Commercio.
+
+
+Ogni tipo di economia produce determinati <b>Beni di scambio</b> mentre ne richiede degli altri. Per esempio, un sistema “Tecnologia” potrebbe produrre Acceleratori Quantici e Condensatori Ionici, e venderli pertanto a un prezzo più vantaggioso. Questi prodotti “tecnologia”, diversamente, sono altamente richiesti dai sistemi “Generazione di combustibile” i quali saranno quindi disposti a comprarli a prezzi più alti.
+
+><b>Nota</b>: i beni di scambio che un sistema produce e richiede sono riconoscibili dal simbolo di Valuta Universale di colore verde (Ʉ) racchiuso in un cerchio negli inventari commerciali. Lo stesso simbolo di colore rosso, invece, indica che quel bene non è richiesto in quel sistema. In sintesi, come con le percentuali, <b>cerca sempre la Ʉ verde ed evita quella rossa quando fai compravendite</b>.
+
+I beni di scambio possono essere catalogati in cinque livelli, secondo Valori Base che vanno da un massimo di Ʉ50,000 a un minimo di Ʉ1,000, come mostrato in tabella. Ogni tipo di economia produce cinque beni di scambio, uno per ogni livello.
+
+Livello|	Valore Base	| Media Galattica
+-------|--------------|----------------
+1|	Ʉ 50,000.0	|Ʉ 52,500.0
+2|	Ʉ 30,000.0	|Ʉ 31,500.0
+3|	Ʉ 15,000.0	|Ʉ 15,750.0
+4|	Ʉ 6,000.0	|Ʉ 6,300.0
+5|	Ʉ 1,000.0	|Ʉ 1,050.0
+
+[per una lista completa dei beni di scambio di ogni sistema, vedi il <a href=https://docs.google.com/spreadsheets/d/1F8WkxuYXzL6MDGJ5SGJu__UKHu-eOZ4eiDz8q-mi0iE/edit#gid=1223102762>GIGA TABELLONE</a> dei loop commerciali a seguire]
+
+Avere una nave equipaggiata con uno Scanner Economico è essenziale per una compravendita sempre efficiente. Una volta installato ti permetterà di riconoscere i sistemi in base al loro tipo di economia nella Mappa della Galassia, con ogni tipo di economia associato a un colore specifico:
+
+
+Colore | Tipo di economia
+-------|------------------
+Viola | Materiali avanzati
+Giallo| Manifattura
+Arancione | Estrazione mineraria
+Rosso | Generazione di combustibile
+Blu | Scientifico
+Ciano | Tecnologia
+Verde | commercio
+
+><b>Nota</b>: il progetto dello Scanner Economico può essere acquistato da un Mercante di tecnologia a bordo delle Stazioni Spaziali per 150 Cluster di Naniti. Tuttavia i cataloghi di vendita dei mercanti non sono tutti uguali, quindi potrebbe essere necessario girarne un po’ prima di trovarlo.
+
+<div style="page-break-after: always;"></div>
+È dunque chiaro come comprare a basso costo e rivendere a prezzo alto sia la chiave per una compravendita efficace, e fortunatamente il mondo di gioco permette di farlo senza troppe difficoltà. Possiamo pianificare rotte commerciali redditizie dove venderemo i nostri beni a prezzi elevati per poi rifornirci di altri beni a prezzi bassi, e questo per ogni sistema che visiteremo, semplicemente concatenando fra loro sistemi che producono beni con sistemi che richiedono quegli stessi beni, ripetendo il processo ciclicamente finché desideriamo.
+
+Ad esempio, i sistemi Materiali avanzati producono beni richiesti dai sistemi Scientifico, questi producono beni richiesti dai sistemi Commercio, i quali producono beni richiesti dai sistemi Materiali avanzati, chiudendo così il loop.
+
+Il secondo loop commerciale è da Generazione combustibile a Manifattura a Tecnologia e di nuovo a Generazione combustibile.
+
+I loop sono evidenziati nella seguente immagine (in inglese!):
+
+<center>
+<a> <img src="Trades.png"> </a>
+</center>
+
+<hr>
+<div style="page-break-after: always;"></div>
+
+#3.Percentuali di Vendita e Acquisto (es. Vendi: 62.3% Acquista: -22.4%)
+Le percentuali di Vendita e Acquisto per un sistema corrispondono ai suoi prezzi di acquisto e vendita in rapporto alla Media Galattica. La cosa più importante da sapere è che <b>queste percentuali sono applicate solo ai beni di scambio</b> e <b>non</b> agli altri prodotti come oggetti standard o craftati. (Vedi il paragrafo <b>3b</b> per maggiori informazioni sulla vendita di oggetti standard o craftati).
+
+La percentuale di Vendita si riferisce al prezzo per il quale stai vendendo l’oggetto (il prezzo per il quale il sistema lo sta acquistando) e la percentuale di Acquisto si riferisce al prezzo per il quale puoi comprare l’oggetto (il prezzo per il quale il sistema lo vende).
+Una maggiore percentuale di Vendita significa un profitto maggiore quando vendi al sistema, e una minore percentuale di Acquisto significa un risparmio maggiore quando compri da quel sistema.
+
+><b>Nota</b>: Lo Scanner Economico è essenziale per vedere le percentuali di Vendita e Acquisto. Una volta installato le percentuali saranno mostrate sulla Mappa della Galassia nel pannello delle informazioni del sistema, insieme al suo tipo di economia e alla sua forza economica.
+
+Queste percentuali sembrano essere una media dei prezzi per cui un sistema compra e vende beni di scambio. Esse non corrispondono all’esatta deviazione dalla Media Galattica in un sistema – quindi un Vendi: -22.4% non significa che il valore dei beni in quel sistema sia sempre 22.4% al di sotto della MG – ma possono essere usate come guida indicativa per ottenere sempre i prezzi migliori.
+
+È possibile trovare sistemi che vendono a prezzi bassi e acquistano a prezzi elevati e questi sono quelli a cui preferiremmo puntare durante il trading.
+Come regola generale, riterremo migliori i sistemi la cui somma delle percentuali di vendita e acquisto sia almeno pari a 90 (ignorando il segno negativo della percentuale di Acquisto). Qualsiasi cosa al di sopra di 80 è considerabile vantaggiosa, ma chiaramente più la somma è alta, meglio è.
+
+Facendo un esempio numerico, un sistema con valori di <b>Vendi: 73.7% Acquista: -24.3%</b> sarà un posto eccellente sia per vendere che per comprare (73.7 + 24.3 = 98).
+
+È interessante notare come queste percentuali non sono legate alla forza economica, né a qualunque altro fattore specifico come la specie dominante o il livello di conflitto di un sistema.
+Sembrano semplicemente valori casuali compresi fra 40 e 80 per la percentuale di Vendita e fra -10 e -30 per la percentuale di Acquisto.
+
+[<a href=https://docs.google.com/spreadsheets/d/1F8WkxuYXzL6MDGJ5SGJu__UKHu-eOZ4eiDz8q-mi0iE/edit#gid=1223102762>GIGA TABELLONE</a>: pag. 2 – Economy strenght / sell & buy %]
+
+Quindi, in cosa si traduce tutto questo per il trading?
+
+In termini di puro profitto significa comprare in sistemi dall’economia forte con la più bassa percentuale di Acquisto che si riesca a trovare (più la percentuale è prossima ad Acquista: -30% meglio è). Questa combinazione garantisce che i beni di scambio di Livello 1 siano disponibili in grandi quantità e ai prezzi più convenienti.
+
+Allo stesso modo dovrai quindi vendere in un sistema con la più alta percentuale di Vendita che si riesca a trovare (più la percentuale è prossima a Vendi: 80% meglio è).
+
+Chiaramente, se stai progettando loop commerciali di cui sopra, è sempre meglio cercare sistemi con un’economia forte e combinazione di percentuali elevate. Ciò aumenterà i margini di guadagno e garantirà continuo accesso a grandi quantità di beni di scambio.
+
+Il trading viene ripreso nel paragrafo 6, <b>Trading e Redditività</b>.
+
+><b>Nota</b>: I terminali di commercio sui pianeti e del mercantile offrono prezzi di scambio significativamente migliori rispetto a quelli nelle stazioni spaziali. Considera anche questo se il tuo obiettivo è massimizzare i profitti.
+(Questo vale <b>solo</b> per i <b>beni di scambio</b> e non per gli altri articoli)
+
+<hr>
+
+##3b.  Quale tipo di economia offre i prezzi migliori per uno specifico articolo?
+
+Praticamente qualsiasi sistema abitato può offrire ottimi prezzi, bisogna solo trovarli.
+
+<b>I prezzi</b> di articoli standard e craftati, infatti, <b>non sono influenzati dal tipo di economia o dalla forza economica del sistema, né dalle percentuali di vendita e acquisto</b>. La cosa fondamentale da sapere è che ci sono discrete variazioni di prezzo tra i diversi terminali commerciali su un singolo pianeta così come fra le stazioni spaziali dei diversi sistemi. Si tratta quindi solo di trovare il terminale commerciale che offra il miglior prezzo per l’articolo che vuoi vendere. 
+
+I prezzi offerti sono casuali – entro un intervallo di circa l’11% - e non sono influenzati da nessun altro fattore.
+
+Lo Scanner Economico (sotto la voce Utilità nel menu rapido) può essere utilizzato per trovare gli avamposti commerciali e verificare in loco quali sono i prezzi migliori. Questo funziona in qualsiasi sistema con almeno un pianeta non sterile.
+<hr>
+<div style="page-break-after: always;"></div>
+
+#4.Economie forti VS economie deboli
+Tutti i sistemi abitati in No Man’s Sky possiedono una forza economica. Essa può essere: <b>Forte</b>, <b>Media</b> o <b>Debole</b>. Internamente al gioco, ciascuno di questi tre livelli viene indicato indirettamente con un termine descrittivo visibile nello specchietto delle informazioni del sistema. Possiamo identificare 8 termini per ogni livello di forza, per un totale di 24 termini differenti, elencati di seguito:
+
+Forte | Medio | Debole
+------|-------|-------
+Avanzato|Adeguato|In declino
+Affluente|Bilanciato|Destituito
+Boom economico|Comfortevole|Fallimentare
+Fiorente|In sviluppo|Nascente
+Con molte risorse|Con medie risorse|Con poche risorse
+Opulento|Promettente|In difficoltà
+Prospero|Soddisfacente|Poco Promettente
+Ricco|Sostenibile|Senza successo
+
+><b>Nota</b>: Internamente a ogni livello di forza, ognuno degli 8 termini è assolutamente equivalente agli altri 7. Quindi un sistema Avanzato sarà economicamente identico a uno Florido, e un sistema Fallimentare sarà identico a uno Poco Promettente.
+
+Apparentemente sarebbe logico supporre che si ottengano prezzi migliori per i nostri beni di scambio in sistemi dalle economie più forti rispetto a quelle più deboli, tuttavia non è così. <b>La forza economica semplicemente determina la quantità di articoli disponibili in quel sistema</b>.
+
+Ad esempio, ogni stazione spaziale trasporta elementi di base come Cobalto, Ossigeno e Sodio. In un sistema economicamente forte essa avrà a disposizione fra le 2500 e le 5000 unità di ogni elemento, in un sistema dall’economia media troveremo fra le 1000 e le 2500 unità, infine in un sistema economicamente debole la stazione avrà meno di 1000 unità di ogni elemento.
+Quindi, se stai cercando di fare scorta di Polvere di Ferrite, devi puntare a sistemi dall’economia forte.
+
+La forza economica inoltre non influisce sul tipo e la qualità degli articoli offerti da un sistema.
+Un avamposto commerciale di un sistema economicamente debole ha le stesse probabilità di vendere articoli costosi come Refrattori Salini o Bronzo Sporco di uno situato in un sistema dall’economia media o forte.
+<hr>
+<div style="page-break-after: always;"></div>
+#5.Mercati e Inventari commerciali
+L’economia di ogni sistema è composta da due mercati: uno per la stazione spaziale e l’altro costituito da tutti i terminali di commercio dei pianeti e del mercantile in proprio possesso (il secondo lo chiameremo per comodità mercato planetario). Ognuno di questi ha il proprio inventario di articoli da scambiare e opera in maniera indipendente dall’altro.
+Anche le navi NPC hanno i loro inventari di scambio, i quali sono legati a uno o all’altro mercato in base a dove esse atterrano. Questi inventari sono associati alla nave piuttosto che al NPC: in ogni sistema possiamo trovare fino a 21 differenti modelli di navi (modelli in riferimento all’aspetto, alla forma) ognuno di questi con un suo inventario.
+Navi dello stesso modello avranno quindi lo stesso inventario, ma questi ultimi non sono collegati fra loro. Ciò significa che se due navi dalla forma identica atterrano una accanto all’altra, esse avranno lo stesso identico inventario, ma comprare un articolo da una non precluderà l’acquisto del medesimo articolo dall’altra.
+
+Lo schema seguente spiega come funzionano i diversi mercati e gli inventari commerciali:
+<b>Stazione Spaziale</b>:
+
+* Il valore degli articoli nel mercato della stazione spaziale è lo stesso sia per i terminali commerciali che per tutti gli NPC. Per esempio, se il prezzo di una Batteria Ionica è Ʉ251 all’interno della stazione spaziale, sarà Ʉ251 anche presso qualsiasi NPC che atterra nella stazione.
+
+* Ciascuno dei terminali commerciali della stazione ha la propria quantità in scorte e varietà di prodotti. Il prezzo mantiene sempre la parità fra i due.
+
+*	Vendere un articolo a uno dei terminali commerciali della stazione spaziale riduce il valore di quell’articolo sia all’interno degli stessi terminali commerciali della stazione che presso tutti i commercianti NPC che vi atterrano (vedi paragrafo 5c per ulteriori informazioni).
+
+*	Vendere o acquistare presso la stazione spaziale non influisce sul mercato planetario/del mercantile.
+
+<b>Mercato Planetario</b>:
+
+*	Ogni terminale commerciale sui pianeti ha la propria quantità di scorte di prodotti e i relativi prezzi, ma tutti i terminali sono collegati a un unico inventario planetario. Comprare da uno di questi terminali influenzerà il livello di scorte di tutti i terminali di ogni pianeta e satellite (lune) del sistema, così come quelli del mercantile.
+
+*	I prezzi dei commercianti NPC non sono legati a quelli dei terminali commerciali.
+
+*	Vendere un articolo a un qualsiasi terminale commerciale di un pianeta riduce il valore di quell’articolo presso tutti i terminali e tutti gli NPC del mercato planetario/del mercantile (vedi paragrafo 5c per ulteriori informazioni).
+
+* Vendere o acquistare nel mercato planetario/del mercantile non influisce sul mercato della stazione spaziale.
+
+<b>Mercantile</b>:
+
+*	I livelli di scorte degli articoli sono determinati dalla forza economica del sistema nel quale si trova il mercantile.
+
+*	I differenti terminali commerciali avranno accesso al medesimo inventario.
+
+*	Vendere un articolo sul mercantile riduce il valore di quell’articolo presso tutti i terminali e tutti gli NPC del mercato planetario/del mercantile (vedi paragrafo 5c per ulteriori informazioni).
+
+<b>Terminali commerciali (stazione spaziale, pianeti e mercantile)</b>:
+
+*	I terminali commerciali hanno uno stock fisso di 10 articoli permanentemente disponibili, oltre a una varietà di articoli casuali (vedi 5b per ulteriori informazioni).
+
+*	Gli inventari dei terminali sono persistenti. Ovvero gli articoli che vendi vengono aggiunti all’inventario condiviso da quel mercato e sono immediatamente disponibili per essere ricomprati.
+
+*	I livelli di scorte e i valori degli articoli vengono ripristinati gradualmente nel tempo (vedi 5d per ulteriori informazioni)
+
+*	Acquistare o vendere presso i terminali commerciali non influisce sul livello di scorte dei commercianti NPC.
+
+*	Vendere presso i terminali commerciali non influisce sui prezzi dei commercianti NPC di quel mercato.
+
+<b>Commercianti NPC (stazione spaziale, pianeti e mercantile)</b>:
+
+*	Gli inventari dei commercianti non sono persistenti. Qualsiasi oggetto venduto non può essere ricomprato.
+
+*	Acquistare presso un commerciante non influisce sugli inventari degli altri commercianti.
+
+*	Vendere un articolo presso un commerciante non influisce sul valore di quell’articolo.
+
+*	I livelli di scorte dei commercianti sono indipendenti fra loro e rispetto ai terminali commerciali.
+<hr>
+
+##5b.Oggetti sempre disponibili
+Ci sono diversi articoli di base che sono sempre disponibili presso qualsiasi terminale di commercio. I vari terminali, che appartengano alla stazione spaziale, ai pianeti o al mercantile, offriranno 10 unità di questi oggetti e la lista di questi sarà pressoché identica in entrambi i mercati (vedi tabella sotto). I terminali commerciali avranno inoltre fra le 2 e le 8 unità di altri articoli in aggiunta ai vari suddetti beni di scambio e articoli sempre disponibili. Questi ultimi varieranno da un terminale all’altro.
+
+Stazioni spaziali | Empori
+------------------|-------
+Placca di metallo|Placca di metallo
+Batteria ionica|Carburante di lancio per astronave
+Microprocessori|Microprocessori
+Modulo tecnologico|Capsula di ossigeno
+Capsula di ossigeno| Plasma instabile
+Plasma instabile|Batteria ionica
+Polvere di ferrite|Polvere di ferrite
+Cobalto|Cobalto
+Ossigeno|Ossigeno
+Sodio|Sodio
+
+I commercianti NPC del mercato planetario/del mercantile trasporteranno con sé anche articoli specifici in base alla razza aliena dominante in quel sistema, insieme ad altri 2 oggetti casuali.
+
+Gek|Korvax|Vy'keen
+---|------|-------
+Reliquia Gek| Involucro Korvax |Effige Vy'keen
+Erba Gek|Cubo della convergenza|Pugnale Vy'keen
+Carburante di lancio per astronave|Carburante di lancio per astronave|Carburante di lancio per astronave
+Trizio|Trizio|Panio
+
+
+##5c.In che modo la vendita influisce sui prezzi?
+Ogni unità di un oggetto venduta a un terminale commerciale riduce il valore di quello specifico articolo di una piccola percentuale all’interno del mercato corrente.
+In questo sistema di riduzione dei prezzi il gioco distingue i vari articoli negli stessi tre gruppi considerati per la Media Galattica.
+In base al gruppo di appartenenza dell’articolo, cambia la percentuale di riduzione del prezzo.
+
+* <b>Gruppo 1: Prodotti </b>(quelli con uno stack di 5 unità per slot di exotuta)
+Il valore nel sistema si riduce dello <b>0.3%</b> per unità venduta, fino a un massimo dell’<b>80%</b>
+
+*	<b>Gruppo 2: Sostanze</b> (quelli con uno stack di 250 unità per slot di exotuta)
+Il valore nel sistema si riduce dello <b>0.03%</b> per unità venduta, fino a un massimo dell’<b>80%</b>
+
+*	<b>Gruppo 3: Beni di scambio</b>
+La variazione del valore cambia a seconda che l’articolo sia prodotto oppure richiesto nel sistema considerato.
+
+  *	Sistemi nei quali l’oggetto viene <b>prodotto</b>, il valore si riduce di <b> ~0.38%</b> per unità venduta, fino a un massimo di <b>~75%</b>
+  *	Sistemi nei quali l’oggetto è <b>richiesto</b>, il valore si riduce di <b>~0.25%</b> per unità venduta, fino a un massimo di <b>~83.5%</b>
+  *	Sistemi nei quali l’oggetto non è prodotto né richiesto, il valore si riduce di <b>0.3%</b> per unità venduta, fino a un massimo dell’<b>80%</b>
+
+
+La riduzione del valore viene applicata dopo il completamento della transazione, quindi, se stai vendendo gli articoli in blocco, conviene farlo in un’unica transazione così da non subire gli effetti della riduzione del valore.
+
+<div style="page-break-after: always;"></div>
+
+<b>Esempio</b>: immaginiamo di possedere 100 Vetro Vivente da vendere e mi trovo in un mercato “vergine” (un mercato presso il quale non ho mai venduto prima). Il valore presso il terminale di commercio ammonta a Ʉ700,000 per ogni unità. Se vendo una singola unità di Vetro Vivente riceverò dunque Ʉ700,000 e, poiché avrò completato la transazione, il valore del Vetro Vivente in quel sistema si ridurrà dello 0.3%. Il prezzo per il quale mi pagheranno ogni unità sarà ora di Ʉ697,900. Se vendo una seconda unità questo scenderà ulteriormente a Ʉ695,806, quindi diventerà Ʉ693,719 e così via continuando a vendere una unità per volta.
+
+Diversamente, se anziché vendere una unità per volta vendessi l’intero stack di 100 in un’unica transazione, riceverò l’equivalente del prezzo iniziale: Ʉ700,000 per unità per un totale di Ʉ70,000,000 ricavando pertanto il miglior guadagno possibile.
+
+Se però ora mi accorgo di avere altre 20 living glass e decido di venderle, otterrò solo Ʉ490,000 per unità in quanto il loro valore, a seguito della prima transazione, sarà crollato del 30% in quel mercato (100×0.3%).
+Avrò quindi venduto un totale di 120 living glass in questo mercato e il prezzo di vendita risultante sarà ridotto del 36%, ovvero Ʉ448,000.
+
+><b>Nota</b>: i market data vengono registrati localmente nel tuo salvataggio e sono validi solo offline. Gli altri giocatori non vedranno le variazioni ai valori di mercato o ai livelli di scorte risultanti dalle tue compravendite.
+
+Nel grafico è possibile visualizzare l'andamento del prezzo a seconda del numero di unità vendute in una transazione, come spiegato nell'esempio precedente:
+```{r, echo=FALSE, warning= FALSE, message= FALSE}
+library(plotly)
+
+df<-read.csv("data.csv", header = TRUE, sep = ";", dec= ",", stringsAsFactors = FALSE)
+
+x<-df[,1]
+y1<-df[,2]
+y2<-df[,3]
+y3<-df[,4]
+maxdisc<-700000*0.8
+p<-plot_ly(df, x=x, y= y1, name= '1 oggetti/transizione', type='scatter', mode='line')%>%
+  add_trace(y = ~y2, name = '10 oggetti/transizione', mode = 'lines')%>%
+  add_trace(y = ~y3, name = '100 oggetti/transizione', mode = 'lines')%>%
+  add_trace(y = maxdisc, name = 'massima riduzione di valore', type='scatter', alpha=0.7)
+layout(p, xaxis=list(title="Numero di transazioni"), yaxis=list(title="Valore dell'oggetto"), title="Riduzione del prezzo per il Vetro Vivente")
+```
+<hr>
+<div style="page-break-after: always;"></div>
+##5d.Come si ripristinano i mercati che hanno subito variazioni?
+Tutti i prezzi e i livelli di scorte influenzati dalle tue compravendite ritorneranno ai valori originali col passare del tempo. Il tasso di ripristino varia in base allo specifico articolo, nuovamente con una suddivisione degli articoli in macro gruppi:
+
+*	<b>Gruppo 1: Prodotti e Beni di scambio</b> (quelli con uno stack di 5 unità per slot di exotuta)
+
+  * <b>Valore</b>: 0.3% del valore originale ripristinato al minuto
+  * <b>Scorte</b>: 1 unità ripristinata al minuto
+  
+* <b>Gruppo 2</b>: Sostanze (quelli con uno stack di 250 unità per slot di exotuta)
+  * <b>Valore</b>: 0.9% del valore originale ripristinato al minuto
+  * <b>Scorte</b>: 30 unità ripristinate al minuto
+  
+Il timer per il ripristino parte non appena esci dal menu del terminale di commercio e proseguirà durante tutto il gameplay. Tuttavia questo si stopperà:
+
+* Durante ogni azione che include un menu, una scelta in un dialogo o qualsiasi altra cosa che interrompa il gameplay. Questo include <b>ogni</b> interazione con <b>qualsiasi</b> terminale, NPC, rovine, ecc. in <b>qualunque</b> sistema
+
+*	Durante il caricamento di un nuovo sistema (come curvatura, teletrasporto, buco nero)
+
+*	Quando il gioco viene messo in pausa.
+
+*	Quando la finestra di gioco viene messa in secondo piano (Alt+Tab)
+
+*	Quando il gioco viene chiuso.
+
+Come detto nel paragrafo precedente, la massima riduzione di valore che può subire un oggetto a seguito di una compravendita è dell’80%. Tuttavia, per quanto riguarda il tempo di ripristino, il gioco continuerà a calcolare la riduzione anche oltre l’80% mostrato tanto più quante più unità verranno vendute. 
+
+Per esempio, se vendi a un terminale commerciale un totale di 150 unità di un oggetto, il suo valore si ridurrà del 45% (0.3 x 150 = 45) e, in circostanze ottimali prive di interruzioni, richiederà 2 ore e 30 minuti per ripristinarsi (45 ÷ 0.3 ÷ 60 = 2.5). Un totale di 300 unità vendute invece supererà il tetto massimo dell’80% (0.3 x 300 = 90>80) e tale valore verrà comunque conteggiato dal gioco nel calcolo del tempo di ripristino come una riduzione del valore del 90%, pertanto richiederà 5 ore per ripristinarsi (90 ÷ 0.3 ÷ 60 = 5).
+
+Questi valori sembrano continuare ad essere conteggiati anche oltre il valore teorico di -100%/ Ʉ0 di valore, il che rende impossibile calcolare il tempo di ripristino a meno che non si sappia esattamente quante unità sono state vendute.
+
+Se sai esattamente quante unità hai venduto in un mercato allora il calcolo del tempo di ripristino è semplice. Per la maggior parte degli articoli il tasso di riduzione per unità venduta è lo stesso del tasso di ripristino per minuto. Quindi, banalmente, se hai venduto 50 unità di un oggetto il suo valore sarà ripristinato in 50 minuti. Se ne sono state vendute 200 unità allora saranno necessari 200 minuti.
+
+Per le sostanze il tasso di riduzione e quello di ripristino sono invece differenti, pertanto il calcolo è leggermente più complesso:
+
+<center> $$quantità\quad venduta\quad (qv)\quad \ast 0.03\div 0.9\div 60=\quad \frac { \frac { qv\ast 0.03 }{ 0.9 }  }{ 60 } \quad =\quad ore\quad per\quad il\quad ripristino\quad completo$$
+</center>
+
+ricordando di considerare le eventuali varie pause sopra menzionate.
+<hr>
+<div style="page-break-after: always;"></div>
+
+#6.Trading e redditività
+I Beni di scambio possono essere acquistati presso qualsiasi terminale commerciale in un sistema, tuttavia si può notare come i valori d’acquisto di questi beni siano più vantaggiosi presso i terminali del mercato planetario rispetto a quelli della stazione spaziale. Questo porta a due metodi di trading possibili; uno più veloce ma meno remunerativo e l’altro più lento ma significativamente più redditizio.
+
+Per entrambi i metodi seguiremo i loop commerciali, che abbiamo visto nel capitolo 2, "Tipi di economia & domanda e offerta".
+
+Negli esempi a seguire è stata utilizzata una nave da 40 slot in grado di trasportare un totale di 200 oggetti, visitando solo sistemi dall’economia forte e con una percentuale combinata di valori non inferiore al 90%. L’obbiettivo era sempre quello di comprare quanti più beni di scambio di livello 1 possibile (vedi tabella dei livelli al capitolo 2), riempiendo l’inventario con articoli di valore più basso se necessario. Lo stesso sistema è stato utilizzato per ogni test così da fornire risultati quanto più accurati possibile.
+
+###Metodo 1-Stazioni spaziali
+
+Il metodo più veloce prevede di saltare da una stazione spaziale alla successiva, comprando e vendendo quanto possibile a ogni fermata. Poiché i prezzi sono tendenzialmente meno convenienti presso le stazioni spaziali, i nostri profitti saranno più bassi ma potremo spostarci continuamente e velocemente attraverso i sistemi senza necessariamente atterrare su alcun pianeta, portando rapidamente a compimento il loop commerciale.
+Durante il test sono stati vistati 11 sistemi in tutto, comprando nel sistema 1 e vendendo nel sistema 2, quindi comprando nel sistema 2 e vendendo nel sistema 3 e così via, per un totale di 10 cicli di acquisto e vendita. Al netto di tutte le transazioni abbiamo pagato in media 7.1% in meno della Media Galattica durante gli acquisti, e abbiamo ricevuto in media il 23.9% in più nelle fasi di vendita.
+
+Il <b>risultato finale</b> è stato un profitto del 33.5%, pari a <b>Ʉ29.6 milioni</b>. Avendo investito una <b>somma iniziale di Ʉ8.5 milioni</b>, abbiamo ottenuto un <b>guadagno</b> del <b>247.9%</b> sull’investimento iniziale.
+
+###Metodo 2-Avamposti commerciali sui pianeti
+
+Per questo metodo abbiamo completamente ignorato le stazioni spaziali e abbiamo invece utilizzato lo Scanner Economico per trovare un avamposto commerciale una volta entrati in ogni sistema. Migliori sono i prezzi che offrono, più alti saranno i nostri profitti, ma impiegheremo inevitabilmente più tempo in ogni sistema che visitiamo.
+In questo caso abbiamo pagato in media il 20.1% in meno rispetto alla Media Galattica e abbiamo venduto in media al 34.9% in più. 
+
+Questo si è tradotto in un margine di <b>profitto</b> complessivo del 68.9%, per un totale di <b>Ʉ52.4 milioni</b>. Il ritorno sull’investimento iniziale di Ʉ7.35 milioni è stato un significativamente maggiore <b>613.8%.</b>
+
+
+Metodo|	Investimento iniziale |	Profitto netto |	ROI (Return on Investment = Ritorno sull'investimento)
+------|---------------|-------------|-------
+Stazioni spaziali|	Ʉ8.50m|	Ʉ29.60m (33.5%)|	247.9%
+Avamposti planetari|	Ʉ7.35m|	Ʉ52.45m (68.9%)|	613.8%
+
+
+Dal test possiamo notare come le compravendite presso gli avamposti commerciali (o qualsiasi terminale planetario/del mercantile) siano notevolmente più remunerative, con un costo extra in termini di tempo.
+
+È chiaramente possibile combinare i due metodi comprando presso il mercato della stazione spaziale e rivendendo in quello planetario, o vice versa, per ottimizzare il rapporto tempo/profitto.
+
+<hr>
+<div style="page-break-after: always;"></div>
+##6b.Programmare rotte commerciali
+Mentre nel test abbiamo avuto una certa fortuna nel concatenare rotte particolarmente remunerative con salti relativamente piccoli, in generale può volerci un po' per trovare i sistemi migliori da visitare. 
+
+Questo comporta più tempo trascorso a scannerizzare la mappa galattica e meno tempo trascorso nella effettiva compravendita. Idealmente vogliamo arricchirci con meno limitazioni e meno spreco di tempo possibile, e semplicemente viaggiare velocemente di sistema in sistema ottenendo i prezzi migliori.
+
+A seguito di tutte le informazioni apprese, ora vogliamo sempre comprare in sistemi con una percentuale di Acquisto quanto più vicina al -30% e vendere in sistemi con una percentuale di Vendita quanto più prossima all’80%. Per far ciò possiamo operare in diverse maniere.
+
+Un metodo potrebbe essere quello di trovare almeno un sistema per ogni tipo di economia con una economia forte e un’alta somma combinata di percentuali di Acquisto e Vendita, e concatenarli per completare il loop commerciale.
+
+La possibilità di costruire molteplici basi con maggiore libertà può tornare estremamente utile in questo caso, dato che possiamo piazzare un computer base e un modulo per il teletrasporto accanto all’avamposto commerciale in ogni sistema. Queste basi possono quindi essere rinominate in modo appropriato in base al tipo di economia del sistema e permetterci di saltare da una all’altra rapidamente.
+
+Se vendiamo presso i mercanti NPC anziché presso i terminali commerciali, il valore dei beni di scambio rimarrà inalterato, con l’unica eccezione del tempo di ripristino delle scorte che dovremo inevitabilmente attendere prima di poter ritornare in ogni sistema. 
+
+La quantità massima che possiamo acquistare di ogni prodotto in un sistema dall’economia forte è di 180 e considerando che le scorte si rigenerano di 1 unità per minuto, dovremo attendere 3 ore per un ripristino completo (il paragrafo 5d contiene maggiori informazioni al riguardo).
+<hr>
+Un’alternativa potrebbe essere trovare un sistema per ogni tipo di economia con una percentuale di Vendita quanto più vicina all’80%. La percentuale di Acquisto e la forza economica non avranno rilevanza in quanto vorremo solo vendere presso questi sistemi e non comprare.
+Di nuovo, possiamo costruire un  computer base e un teletrasporto e rinominare la nostra base. Ad esempio “Materiali avanzati // Vendi: 79.3”.
+
+Procedendo con la sola vendita presso i mercanti NPC anziché presso i terminali commerciali, i valori dei beni di scambio in quel mercato si manterrà costante e ogni base potrà essere la nostra stazione di vendita permanente per i beni richiesti da quel tipo di economia, senza doverci preoccupare di alcun timer o ripristino delle scorte.
+
+La medesima cosa può essere fatta per sistemi con una bassa percentuale di Acquisto, con la differenza che questi sistemi dovranno anche essere economicamente forti per garantirci grandi quantità di beni di scambio e scorte elevate.
+Ogni sistema presso cui compreremo avrà bisogno di tempo per il ripristino delle scorte, quindi potrebbe essere necessario trovare e costruire una base in più sistemi dello stesso tipo di economia se vogliamo completare più di un loop commerciale ogni 3 ore.
+
+Tuttavia, poiché la variazione dei prezzi e delle percentuali di Acquisto sono molto inferiori rispetto alle variazioni sulla Vendita, è leggermente meno importante trovare sempre il miglior prezzo in assoluto. Un buon prezzo di acquisto è importante, ma quantità e prezzo di vendita sono fattori decisamente più decisivi per un profitto alto e costante.
+
+Inoltre, comprare presso qualsiasi sistema che abbia una economia forte e prezzi per lo meno accettabili è preferibile rispetto a spendere molto tempo nella ricerca di sistemi con una percentuale di acquisto migliore.
+
+<hr>
+<div style="page-break-after: always;"></div>
+##6c.Sfruttare le meccaniche di gioco
+Sfruttando varie meccaniche del gioco è persino possibile realizzare un ottimo profitto comprando e vendendo prodotti che inizialmente possono non sembrare un buon investimento. Come visto nel capitolo 5, il valore di un articolo in un mercato si riduce quando lo vendi a un terminale commerciale, ma non cresce se invece lo acquisti.
+Questo significa che è possibile ridurre a piacimento il valore di mercato di qualsiasi prodotto o sostanza in vendita semplicemente comprandola e rivendendola immediatamente.
+
+Per fare ciò abbiamo bisogno di uno di quelli articoli sempre disponibili nei terminali commerciali (vedi paragrafo 5b), il ché garantisce la possibilità di comprare e vendere in qualsiasi sistema visitiamo indipendentemente dal suo tipo di economia. Un ottimo esempio è il <b>Modulo Tecnologico</b>, disponibile in qualunque stazione spaziale. Se risulta troppo costoso per le vostre tasche, il  <b>Plasma Instabile</b> o le  <b>Placche di Metallo</b> sono delle valide alternative più economiche. Se siete messi veramente male col conto in banca, ripiegate su  <b>Capsula di Ossigeno</b> e  <b>Batteria Ionica </b>.
+
+
+<b>Necessario</b>:
+
+* Un minimo di 20 slot liberi nell’inventario. Più slot liberi ci sono e meglio è.
+
+*	Idealmente un budget di almeno 5.75 milioni di Ʉ, ma è fattibile con un budget non inferiore ai Ʉ25,000
+
+<b>Procedimento</b>:
+Questi sono i passi da seguire che raccomandiamo per questo metodo. Ci sono diverse vie possibili da seguire, alcune delle quali permettono di ottenere ancor più denaro, ma con questi step si ottiene il miglior rapporto fra tempo e profitto.
+
+1. Visita una stazione spaziale – possibilmente in un sistema dall’economia forte – e compra da un <b>commerciante NPC</b> quante più unità possibili dell’articolo scelto.
+	
+2. Vendi le unità comprate a uno dei <b>terminali commerciali</b> della stazione spaziale. Questo ridurrà il valore di mercato del prodotto dello 0.3% per unità venduta.
+
+3. Ricompra gli articoli, insieme a quelli che il terminale aveva già in magazzino.
+	
+4. Ripeti il procedimento finchè il prezzo di acquisto non scende intorno al <b>-78%</b>.
+Questo Significa vendere un totale di 267 unità del prodotto per ridurre completamente il valore al suo minimo possibile (80÷0.3=266.67)
+
+5. Con il valore di acquisto portato al minimo, riempi nuovamente il tuo inventario dell’articolo scelto. Se necessario, ulteriori scorte possono essere acquistate dai commercianti NPC. (Si ricordi infatti che anche i prezzi dei commercianti NPC sono influenzati dal mercato in cui essi si trovano)
+  
+6. Recati in qualsiasi altro sistema e vendi tutte le scorte accumulate presso uno dei <b>terminali della stazione spaziale</b>. Non essendo i prezzi del sistema attuale influenzati dal precedente ciclo di acquisti, ne risulterà un notevole guadagno. Rivendendo in questo nuovo sistema, inoltre, si ridurrà il valore del prodotto anche nel mercato attuale.
+
+7. Compra nuovamente gli articoli al prezzo ribassato. Ripeti il ciclo di acquisto e vendita fino ad arrivare al prezzo minimo, quindi riempi di nuovo le tue scorte.
+  
+8. Ripeti i passi <b>6</b> e <b>7</b> finchè non ti ritieni soddisfatto.
+  
+  
+Come negli esempi precedenti, abbiamo seguito questo metodo usando 40 slot nell’inventario, con una capacità di 200 unità complessive, e visitando 11 sistemi. Il ricavo lordo è stato di <b>Ʉ65.4 milioni (85.3%)</b>, e su un investimento iniziale di <b>Ʉ8.7 milioni</b> il guadagno è stato del <b>655.5%</b>.
+
+
+È anche possibile ridurre il valore dei <b>Beni di scambio</b> usando lo stesso ciclo Acquisto-Vendita-Acquisto <b>(A/V/A)</b>. Per verificare la differenza di guadagno fra i due casi, è stato ripetuto il metodo degli avamposti commerciali sui pianeti (vedi capitolo 6) aggiungendo la fase di ciclo di Vendita e Riacquisto dopo aver fatto la prima iniziale scorta in ogni sistema.
+
+L’incremento del profitto è notevole, con un ricavo lordo fra i Ʉ52.45 milioni e gli <b>Ʉ82.12 milioni</b> (rispettivamente del 68.9% e <b>79.9%</b>) e un’impennata del ROI dal 613.8% al <b>1099%</b>.
+
+Di seguito sono riportati i dati di tutti e quattro i test confrontati.
+
+Metodo|	Investimento iniziale|	Profitto netto|	ROI (Return on Investment = Ritorno sull'investimento)
+------|---------------|-------------|--------
+Stazioni spaziali	|Ʉ8.50m|	Ʉ29.60m (33.5%)|	247.9%
+Avamposti planetari	|Ʉ7.35m|	Ʉ52.45m (68.9%)|	613.8%
+Moduli Tecnologici|	Ʉ8.66m	|Ʉ65.44m| (85.3%)|	655.5%
+Avamposti planetari (A/V/A)	|Ʉ7.35m|	Ʉ88.12m (79.7%)|	1099%
+
+
+Quindi, se siete disposti a spingervi più in là con l’economia del gioco, potete macinare una discreta quantità di denaro in poco tempo. E, chiaramente, se avete più di 40 slot liberi nell’inventario il livello di profitto non può che crescere esponenzialmente.
+
+<hr>
+<div style="page-break-after: always;"></div>
+
+#Conclusione
+
+Se siete giunti fin qui leggendo ogni parola della guida, congratulazioni e grazie per la pazienza e l’attenzione. Concedetevi una merenda o un premio, ve lo siete meritati.
+Se avete qualsiasi domanda, commento, suggerimento o ulteriore informazione che ritenete opportuna implementare, non esitate a contattarci.
+<div style="page-break-after: always;"></div>
+#Analisi dei dati economici
+In questa sezione presentiamo una piccola <b>analisi esplorativa</b> sui dati rilevati dall'autore originale della guida. L'analisi è stata condotta tramite il software R.
+
+Eventuali conclusioni basate su questo tipo di analisi non sono assolutamente da considerare come definitive. L'obiettivo è solo quello di avere una visualizzazione dei dati, rispondendo in modo qualitativo e, ripeto, per nulla conclusivo e definitivo, ad alcune semplici domande.
+
+Buona lettura!
+
+
+
+```{r, echo=FALSE, warning= FALSE, message= FALSE}
+library(plotly)
+library(ggplot2)
+library(reshape2)
+library(plyr)
+library(ggpubr)
+library(gridExtra)
+library(tidyverse)
+library(ggridges)
+
+df<-read.csv("nmseco.csv", header = TRUE, sep = ",", dec= ",", stringsAsFactors = FALSE)
+
+
+
+
+df$Dominant.Race<-as.factor(df$Dominant.Race)
+df$Economy.Type<-as.factor(df$Economy.Type)
+df$Sell....<-as.numeric(df$Sell....)
+df$Buy....<-as.numeric(df$Buy....)
+df$Total<-as.numeric(df$Total)
+df$Economy.Strength.Numeric<-as.factor(df$Economy.Strength.Numeric)
+df$Economy.Strength<-as.factor(df$Economy.Strength)
+df$Conflict.Level<-as.factor((df$Conflict.Level))
+df$Star.Colour<-as.factor(df$Star.Colour)
+
+df$Economy.Strength.Numeric<- revalue(df$Economy.Strength.Numeric,c("1"="Povero","2"="Medio","3"="Ricco"))
+
+cols<-c("Blue"="#00aedb", "Green"="#00b159", "Red"="#d11141", "Yellow"="#ffc425")
+ric<-c("3"="Rich","2"="Average","1"="Poor")
+razze<-c("greenyellow","royalblue", "coral2")
+
+```
+##Frequenza delle razze: C'è una razza più frequente nell'universo?
+<center>
+```{r, echo=FALSE, warning= FALSE, message= FALSE}
+
+
+ggplotly(ggplot(df, aes(Dominant.Race))+
+           geom_bar(alpha=0.7,aes(fill=Dominant.Race), width = 0.6)+
+           scale_fill_manual(name= "Razza \nDominante", values=c("Gek"="greenyellow","Korvax"="royalblue", "Vy'keen"="coral2"))+
+           geom_text(stat="count", aes(label=..count.., y=..count..+2))+
+           ylab("Contegggio")+
+           xlab("Razza Dominante")+
+           ggtitle("Frequenza delle razze dominanti")+
+           
+           theme_classic()
+           
+         
+           #axis.text.y = element_blank(), axis.ticks.y = element_blank()
+)
+```
+</center>
+Non sembra esserci una razza dominante. 
+
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+## C'è una razza più "ricca"?
+Si sa, i Vy'keen sono onorevoli guerrieri, i Korvax sono dediti alla scienza e alla loro "Convergenza", mentre i Gek sono abili commercianti. Analizziamo quindi i dati commerciali dei loro sistemi per scoprire se effettivamente i Gek sono abili nel commercio.
+<center>
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+p1<-ggplot(df, aes(Dominant.Race, Total))+
+           geom_boxplot(aes(fill=Dominant.Race))+
+           geom_point(alpha=0.8,aes(fill=Dominant.Race))+
+           geom_jitter(alpha=.5 ,aes(fill=Dominant.Race), width = 0.1)+
+           scale_fill_manual(values=c("Gek"="greenyellow","Korvax"="royalblue", "Vy'keen"="coral2"))+
+           scale_colour_manual(values=c("Gek"="greenyellow","Korvax"="royalblue", "Vy'keen"="coral2"))+
+           theme_classic()+
+  coord_flip()
+pa<-ggplotly(p1)
+p2<-ggplot(df, aes(Total))+
+  geom_density(aes(fill=Dominant.Race), alpha=0.5)+
+  scale_fill_manual(values=razze)+
+  theme(legend.position="none",axis.title.x = element_blank(),
+axis.title.y = element_blank(),
+axis.text.x = element_blank(),
+axis.text.y = element_blank(),
+axis.ticks.y = element_blank()
+)
+pb<-ggplotly(p2)
+
+
+
+p<-subplot(pb,pa, nrows = 2, shareX = TRUE, heights = c(0.2,0.7))
+p<-style(p, showlegend=FALSE)
+p%>%
+  layout(title="Distribuzione e densit? delle percentuali commerciali\n delle razze galattiche", autosize=TRUE)
+```
+</center>
+Nel grafico i Gek hanno una più alta densità di sistemi con una percentuale commerciale totale pari al 90%. Inoltre si può notare come le loro percentuali si concentrino intorno all'85% circa, seguiti da Korvax (81%) e Vy'keen (78%).
+
+Nonostante i pochi dati a disposizione, i Gek sembrano davvero essere meritevoli del primato economico!
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+##Distribuzione della ricchezza galattica
+Come è distribuita la ricchezza nella galassia?
+<center>
+```{r,echo=FALSE, warning= FALSE, message= FALSE}
+
+
+dfriccanza<-count(df, Economy.Strength, Economy.Strength.Numeric)
+ggplotly(ggplot(dfriccanza, aes(reorder(Economy.Strength, -n, sum), n))+
+           geom_bar(stat="identity",alpha=0.8,position="dodge", aes(fill=Economy.Strength.Numeric), width = 0.6)+
+           geom_text(stat="identity", aes(label=n, y=n+1), size=3)+
+           theme_classic()+
+           coord_flip()+
+           xlab("Forza dell'economia")+
+           ggtitle("Frequenza dei sistemi ricchi, medi e poveri")+
+           scale_fill_brewer(palette= "BuPu", name="Valutazione \neconomica")
+)
+```
+</center>
+I sistemi "medi" risultano molto più frequenti di quelli poveri, che sono a loro volta più frequenti di quelli ricchi. 
+<hr>
+<div style="page-break-after: always;"></div>
+
+##Forza economica VS Ricchezza: i sistemi più ricchi, hanno davvero percentuali commerciali più alte?
+Secondo l'autore originale, le percentuali di acquisto sono casuali. Verifichiamolo!
+<center>
+```{r,echo=FALSE, warning= FALSE, message= FALSE}
+dfricchi<-df[df$Economy.Strength.Numeric=="Povero",]
+p1<-ggplot(dfricchi, aes(Total, Economy.Strength))+
+           geom_density_ridges_gradient(aes(fill=..x..))+
+  scale_fill_gradientn(colours = c("#E0ECF4", "#C3CDDD", "#ACAEC4"))+
+  theme_classic()
+         
+dfricchi<-df[df$Economy.Strength.Numeric=="Medio",]
+p2<-ggplot(dfricchi, aes(Total, Economy.Strength))+
+  geom_density_ridges_gradient(aes(fill=..x..))+
+  scale_fill_gradientn(colours = c("#E6F4F1", "#95A6CC", "#0B3048"))+
+  theme_classic()
+
+dfricchi<-df[df$Economy.Strength.Numeric=="Ricco",]
+p3<-ggplot(dfricchi, aes(Total, Economy.Strength))+
+  geom_density_ridges_gradient(aes(fill=..x..))+
+  scale_fill_gradientn(colours = c("#FFF5FF", "#A287B0", "#8856A7"))+
+  theme_classic()
+
+p4<-grid.arrange(p1,p2,p3, ncol=1, nrow=3)
+         
+
+```
+</center>
+Dal grafico di densità di Ridge, sembrerebbe che i sistemi ricchi presentino una più alta densità di valori percentuali tra l'80% e il 90%. 
+
+Questo sembra contraddire l'assunto dell'autore originale. Ricordiamo che queste analisi sono solamente preliminari ed è sconsigliato trarne conclusioni infondate.
+<hr>
+<div style="page-break-after: always;"></div>
+
+
+##Che colore hanno i sistemi con le percentuali commerciali più alte?
+
+Avendo a disposizione i dati, possiamo indagare la relazione tra:
+
+* La statistica "Totale": somma delle percentuali di vendita e di acqusito di un sistema
+
+* Il colore del sistema stellare.
+
+<center>
+```{r,echo=FALSE, warning= FALSE, message= FALSE}
+
+ggplotly(ggplot(df, aes(Star.Colour, Total))+
+           geom_point(aes(fill=Star.Colour))+
+           geom_jitter(alpha=0.4, aes(fill=Star.Colour), width = 0.3)+
+           geom_violin(alpha=0.3,  aes(fill=Star.Colour))+
+           geom_boxplot(alpha=0.2, aes(fill=Star.Colour))+
+           #geom_bar(stat="bin",aes(fill=Star.Colour), position="dodge")+
+           scale_fill_manual(values=cols)+
+           theme_classic()+
+           xlab("Colore della stella")+
+           ylab("%Totale = %vendita + %acquisto") +
+           theme(legend.position = "none")
+         
+
+)
+
+```
+</center>
+Dal grafico si può dedurre che:
+
+* <b>Sistemi gialli</b>: caratterizzati da percentuali commerciali totali distribuite in modo omogeneo con una dispersione maggiore rispetto agli altri sistemi nel range 55% - 105%. Questo può essere dovuto al fatto che, numericamente parlando, sono i sistemi più comuni
+
+* <b>Sistemi Verdi</b>: hanno percentuali mediamente più alte in un range più stretto rispetto a quelli gialli. Inoltre presentano una densità maggiore di percentuali intorno all'85% rispetto a tutti gli altri sistemi. In futuri studi sarebbe da indagare la possibilità che questi sistemi siano "migliori" per il commercio.
+
+* <b>Sistemi Blu </b>: similmente rispetto ai sistemi verdi, sono caratterizzati da percentuali distribuite su un range più ristretto, tuttavia le percentuali estreme osservate risultano minori di quelle dei sistemi verdi.
+
+* <b>Sistemi Rossi </b>: interessante notare che, nei dati, è presente un solo salto (su 200) effettuato in un sistema rosso non disabitato. Interessante anche notare l'alta (e anomala) percentuale presente in quel sistema.
+
+
+

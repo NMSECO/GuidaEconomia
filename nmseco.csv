@@ -1,0 +1,206 @@
+ID,"Dominant
+Race","Economy
+Type",Sell (+),Buy (-),"Economy
+Strength",Economy Strength Numeric,"Conflict
+Level","Star
+Colour",Total
+1,Korvax,High Tech,0.79,0.29,Struggling,1,1,Green,1.08
+2,Korvax,Research,0.77,0.30,Comfortable,2,1,Yellow,1.07
+3,Vy'keen,Mining,0.79,0.28,Comfortable,2,1,Yellow,1.07
+4,Korvax,High Tech,0.78,0.28,Comfortable,2,1,Yellow,1.06
+5,Gek,Research,0.76,0.29,Comfortable,2,2,Yellow,1.06
+6,Gek,Research,0.75,0.29,Comfortable,2,3,Yellow,1.05
+7,Vy'keen,Material Fusion,0.76,0.29,Struggling,1,2,Yellow,1.05
+8,Gek,Mining,0.78,0.27,Balanced,2,2,Yellow,1.04
+9,Korvax,Mercantile,0.78,0.25,Balanced,2,2,Yellow,1.03
+10,Vy'keen,Industrial,0.79,0.22,Developing,2,1,Yellow,1.01
+11,Korvax,High Tech,0.73,0.28,Comfortable,2,1,Yellow,1.01
+12,Korvax,Scientific,0.79,0.22,Declining,1,3,Yellow,1.01
+13,Vy'keen,Industrial,0.79,0.20,Developing,2,3,Yellow,0.99
+14,Korvax,Manufacturing,0.70,0.30,Comfortable,2,3,Green,0.99
+15,Gek,Trading,0.76,0.22,Developing,2,3,Red,0.98
+16,Korvax,Research,0.70,0.28,Comfortable,2,1,Yellow,0.98
+17,Korvax,Trading,0.76,0.22,Declining,1,1,Yellow,0.98
+18,Vy'keen,Energy Supply,0.77,0.21,Declining,1,1,Yellow,0.98
+19,Gek,High Tech,0.72,0.26,Balanced,2,1,Green,0.98
+20,Vy'keen,Construction,0.78,0.19,Medium Supply,2,2,Blue,0.97
+21,Vy'keen,Shipping,0.79,0.18,Medium Supply,2,2,Yellow,0.97
+22,Korvax,Shipping,0.79,0.18,Medium Supply,2,1,Yellow,0.97
+23,Gek,Minerals,0.73,0.23,Promising,2,2,Yellow,0.97
+24,Gek,Ore Extraction,0.78,0.19,Medium Supply,2,3,Yellow,0.97
+25,Gek,Power Generation,0.67,0.29,Struggling,1,,Blue,0.96
+26,Vy'keen,Minerals,0.75,0.21,Affluent,3,3,Yellow,0.96
+27,Vy'keen,Shipping,0.79,0.17,Satisfactory,2,3,Yellow,0.96
+28,Vy'keen,Construction,0.77,0.19,Failing,1,3,Yellow,0.96
+29,Korvax,Metal Processing,0.78,0.18,Booming,3,2,Yellow,0.96
+30,Vy'keen,Research,0.69,0.27,Prosperous,3,3,Yellow,0.95
+31,Korvax,Mining,0.69,0.26,Balanced,2,2,Green,0.95
+32,Gek,Technology,0.74,0.21,Developing,2,2,Yellow,0.95
+33,Gek,Research,0.65,0.30,Comfortable,2,1,Yellow,0.95
+34,Vy'keen,Research,0.65,0.30,Struggling,1,2,Green,0.95
+35,Vy'keen,Power Generation,0.68,0.27,Balanced,2,3,Blue,0.95
+36,Vy'keen,Experimental,0.76,0.19,Medium Supply,2,2,Yellow,0.95
+37,Korvax,Metal Processing,0.76,0.19,Failing,1,,Green,0.94
+38,Vy'keen,Construction,0.77,0.17,Destitute,1,3,Yellow,0.94
+39,Gek,High Tech,0.66,0.28,Struggling,1,2,Yellow,0.94
+40,Korvax,Ore Extraction,0.78,0.16,Destitute,1,2,Yellow,0.94
+41,Vy'keen,Metal Processing,0.74,0.19,Medium Supply,2,2,Yellow,0.94
+42,Vy'keen,Manufacturing,0.67,0.26,Balanced,2,2,Blue,0.93
+43,Gek,Nano-construction,0.78,0.15,Destitute,1,1,Yellow,0.93
+44,Korvax,Shipping,0.76,0.17,Destitute,1,1,Yellow,0.93
+45,Korvax,Energy Supply,0.71,0.22,Developing,2,1,Yellow,0.93
+46,Gek,Metal Processing,0.74,0.18,Medium Supply,2,3,Green,0.93
+47,Vy'keen,Mercantile,0.65,0.27,Balanced,2,2,Yellow,0.92
+48,Korvax,Mining,0.66,0.26,Balanced,2,2,Yellow,0.92
+49,Gek,Minerals,0.71,0.21,Developing,2,3,Yellow,0.91
+50,Gek,Construction,0.72,0.20,Medium Supply,2,1,Yellow,0.91
+51,Vy'keen,Ore Processing,0.79,0.12,Unsuccessful,1,,Green,0.91
+52,Vy'keen,Industrial,0.66,0.25,Promising,2,3,Green,0.91
+53,Vy'keen,Construction,0.75,0.16,Satisfactory,2,2,Yellow,0.91
+54,Vy'keen,Alchemical,0.71,0.20,Developing,2,1,Yellow,0.91
+55,Vy'keen,Industrial,0.68,0.22,Developing,2,3,Yellow,0.90
+56,Gek,Manufacturing,0.61,0.29,Comfortable,2,2,Yellow,0.90
+57,Gek,Manufacturing,0.65,0.25,Balanced,2,3,Yellow,0.90
+58,Gek,High Voltage,0.76,0.15,Low Supply,1,3,Yellow,0.90
+59,Korvax,Nano-construction,0.70,0.20,Medium Supply,2,3,Yellow,0.90
+60,Gek,Nano-construction,0.71,0.19,Medium Supply,2,3,Yellow,0.90
+61,Gek,Mathematical,0.78,0.12,Adequate,2,3,Yellow,0.90
+62,Gek,High Voltage,0.77,0.13,Sustainable,2,2,Yellow,0.90
+63,Gek,Material Fusion,0.62,0.28,Comfortable,2,3,Blue,0.90
+64,Gek,Manufacturing,0.63,0.26,Balanced,2,2,Yellow,0.89
+65,Vy'keen,Nano-construction,0.70,0.18,Failing,1,2,Blue,0.89
+66,Gek,Mercantile,0.61,0.28,Comfortable,2,2,Blue,0.88
+67,Korvax,Power Generation,0.61,0.28,Wealthy,3,2,Yellow,0.88
+68,Vy'keen,Mass Production,0.75,0.13,Sustainable,2,3,Green,0.88
+69,Gek,Engineering,0.74,0.14,Sustainable,2,1,Green,0.88
+70,Gek,Nano-construction,0.68,0.20,Medium Supply,2,1,Green,0.87
+71,Korvax,High Voltage,0.77,0.11,Adequate,2,1,Yellow,0.87
+72,Korvax,Alchemical,0.66,0.21,Developing,2,2,Yellow,0.87
+73,Korvax,Ore Extraction,0.70,0.17,Satisfactory,2,2,Yellow,0.87
+74,Gek,Metal Processing,0.69,0.17,Satisfactory,2,1,Yellow,0.86
+75,Vy'keen,Prospecting,0.71,0.15,High Supply,3,3,Yellow,0.86
+76,Gek,Technology,0.66,0.20,Affluent,3,2,Yellow,0.86
+77,Gek,Metal Processing,0.69,0.17,Satisfactory,2,2,Yellow,0.86
+78,Gek,Engineering,0.75,0.11,Adequate,2,2,Yellow,0.86
+79,Korvax,Industrial,0.62,0.23,Promising,2,2,Yellow,0.85
+80,Korvax,Ore Processing,0.73,0.13,Adequate,2,3,Yellow,0.85
+81,Gek,Nano-construction,0.66,0.19,Medium Supply,2,3,Yellow,0.85
+82,Korvax,High Voltage,0.70,0.15,Sustainable,2,3,Yellow,0.84
+83,Gek,Material Fusion,0.58,0.26,Balanced,2,2,Yellow,0.84
+84,Vy'keen,Alchemical,0.62,0.22,Affluent,3,2,Yellow,0.84
+85,Korvax,Manufacturing,0.58,0.26,Fledgling,1,,Blue,0.84
+86,Korvax,Alchemical,0.61,0.23,Unpromising,1,2,Yellow,0.84
+87,Gek,Ore Extraction,0.68,0.16,Flourishing,3,1,Yellow,0.84
+88,Korvax,Mass Production,0.69,0.15,Sustainable,2,2,Blue,0.84
+89,Vy'keen,Trading,0.60,0.23,Promising,2,3,Green,0.84
+90,Korvax,Research,0.58,0.25,Balanced,2,2,Yellow,0.84
+91,Gek,Construction,0.66,0.16,Destitute,1,1,Yellow,0.82
+92,Korvax,High Tech,0.54,0.28,Struggling,1,3,Yellow,0.82
+93,Vy'keen,Fuel Generation,0.64,0.18,Medium Supply,2,3,Yellow,0.82
+94,Vy'keen,Fuel Generation,0.64,0.17,Destitute,1,1,Yellow,0.82
+95,Korvax,Prospecting,0.71,0.11,Adequate,2,1,Yellow,0.82
+96,Vy'keen,Technology,0.57,0.25,Advanced,3,3,Yellow,0.82
+97,Gek,Research,0.56,0.25,Balanced,2,1,Yellow,0.82
+98,Vy'keen,Mathematical,0.69,0.12,Opulent,3,3,Yellow,0.81
+99,Vy'keen,Mass Production,0.68,0.14,Sustainable,2,1,Yellow,0.81
+100,Korvax,Mercantile,0.54,0.27,Balanced,2,1,Blue,0.81
+101,Korvax,Trading,0.60,0.21,Developing,2,3,Yellow,0.81
+102,Gek,Trading,0.60,0.20,Declining,1,3,Yellow,0.81
+103,Korvax,Fuel Generation,0.61,0.20,Failing,1,,Blue,0.81
+104,Korvax,Shipping,0.61,0.19,Medium Supply,2,1,Yellow,0.80
+105,Vy'keen,Ore Processing,0.69,0.11,Adequate,2,1,Yellow,0.80
+106,Gek,Alchemical,0.56,0.24,Unpromising,1,,Blue,0.80
+107,Gek,Minerals,0.56,0.24,Promising,2,1,Yellow,0.79
+108,Gek,Commercial,0.65,0.14,Sustainable,2,1,Yellow,0.79
+109,Vy'keen,Industrial,0.58,0.21,Developing,2,1,Yellow,0.79
+110,Gek,Mathematical,0.68,0.11,Unsuccessful,1,3,Yellow,0.79
+111,Gek,Industrial,0.58,0.21,Developing,2,1,Blue,0.78
+112,Gek,Ore Extraction,0.60,0.18,Medium Supply,2,1,Yellow,0.78
+113,Gek,Shipping,0.60,0.18,Failing,1,2,Blue,0.78
+114,Gek,Ore Processing,0.57,0.21,Adequate,2,3,Yellow,0.78
+115,Korvax,Industrial,0.53,0.25,Promising,2,1,Yellow,0.78
+116,Gek,Construction,0.60,0.18,Medium Supply,2,1,Yellow,0.78
+117,Korvax,Mass Production,0.65,0.12,Opulent,3,1,Yellow,0.78
+118,Vy'keen,Nano-construction,0.60,0.17,Destitute,1,1,Blue,0.77
+119,Korvax,Construction,0.61,0.16,Satisfactory,2,3,Yellow,0.77
+120,Vy'keen,Manufacturing,0.47,0.29,Comfortable,2,3,Yellow,0.77
+121,Gek,Mass Production,0.66,0.10,Adequate,2,2,Blue,0.76
+122,Korvax,Energy Supply,0.52,0.24,Advanced,3,1,Green,0.76
+123,Vy'keen,Minerals,0.53,0.23,Promising,2,3,Yellow,0.76
+124,Vy'keen,Commercial,0.63,0.13,High Supply,3,1,Yellow,0.76
+125,Vy'keen,Mercantile,0.50,0.26,Balanced,2,2,Yellow,0.76
+126,Gek,Mercantile,0.47,0.29,Struggling,1,1,Yellow,0.76
+127,Vy'keen,Mercantile,0.50,0.26,Prosperous,3,2,Yellow,0.76
+128,Gek,Manufacturing,0.48,0.27,Fledgling,1,2,Yellow,0.76
+129,Korvax,High Tech,0.49,0.27,Balanced,2,3,Yellow,0.76
+130,Korvax,Mining,0.50,0.25,Balanced,2,1,Yellow,0.76
+131,Korvax,High Voltage,0.61,0.14,Low Supply,1,3,Yellow,0.75
+132,Vy'keen,Ore Extraction,0.58,0.17,Booming,3,1,Green,0.75
+133,Vy'keen,Mercantile,0.49,0.25,Balanced,2,3,Yellow,0.75
+134,Vy'keen,Minerals,0.53,0.22,Developing,2,3,Yellow,0.75
+135,Vy'keen,High Tech,0.47,0.27,Fledgling,1,3,Yellow,0.75
+136,Vy'keen,Power Generation,0.48,0.26,Balanced,2,1,Yellow,0.74
+137,Vy'keen,Power Generation,0.49,0.25,Balanced,2,2,Green,0.74
+138,Gek,Construction,0.57,0.16,Satisfactory,2,3,Yellow,0.74
+139,Korvax,Material Fusion,0.47,0.27,Balanced,2,1,Yellow,0.73
+140,Korvax,Mass Production,0.62,0.11,Unsuccessful,1,2,Yellow,0.73
+141,Vy'keen,Commercial,0.59,0.14,Low Supply,1,3,Yellow,0.73
+142,Korvax,Construction,0.55,0.18,Medium Supply,2,3,Yellow,0.72
+143,Vy'keen,Industrial,0.47,0.25,Promising,2,3,Yellow,0.72
+144,Vy'keen,Commercial,0.60,0.12,Adequate,2,3,Yellow,0.72
+145,Gek,Prospecting,0.60,0.12,Adequate,2,3,Blue,0.72
+146,Korvax,Nano-construction,0.53,0.18,Medium Supply,2,3,Blue,0.71
+147,Vy'keen,Construction,0.56,0.16,Satisfactory,2,1,Blue,0.71
+148,Vy'keen,Mining,0.43,0.29,Struggling,1,2,Yellow,0.71
+149,Gek,Ore Extraction,0.54,0.18,Satisfactory,2,2,Yellow,0.71
+150,Korvax,Trading,0.49,0.22,Developing,2,3,Yellow,0.71
+151,Korvax,Research,0.42,0.30,Wealthy,3,1,Yellow,0.71
+152,Vy'keen,Engineering,0.58,0.13,Sustainable,2,1,Yellow,0.71
+153,Korvax,Mercantile,0.41,0.30,Comfortable,2,1,Yellow,0.70
+154,Vy'keen,Power Generation,0.42,0.28,Comfortable,2,2,Yellow,0.70
+155,Gek,Construction,0.53,0.18,Medium Supply,2,3,Yellow,0.70
+156,Korvax,Metal Processing,0.53,0.17,Satisfactory,2,2,Blue,0.70
+157,Gek,Mining,0.41,0.29,Comfortable,2,3,Yellow,0.70
+158,Korvax,Mercantile,0.43,0.27,Fledgling,1,3,Yellow,0.70
+159,Vy'keen,Experimental,0.53,0.17,Satisfactory,2,1,Blue,0.70
+160,Vy'keen,Metal Processing,0.51,0.19,Medium Supply,2,3,Yellow,0.70
+161,Gek,Industrial,0.47,0.22,Declining,1,3,Yellow,0.69
+162,Gek,High Voltage,0.54,0.15,Sustainable,2,1,Yellow,0.69
+163,Vy'keen,Trading,0.48,0.20,Developing,2,2,Yellow,0.68
+164,Korvax,Ore Extraction,0.49,0.20,Medium Supply,2,3,Green,0.68
+165,Gek,Metal Processing,0.51,0.17,Satisfactory,2,3,Yellow,0.68
+166,Vy'keen,Commercial,0.52,0.15,Low Supply,1,2,Blue,0.67
+167,Korvax,Trading,0.46,0.21,Affluent,3,1,Yellow,0.67
+168,Vy'keen,Research,0.40,0.26,Balanced,2,2,Yellow,0.66
+169,Gek,Minerals,0.42,0.24,Advanced,3,3,Yellow,0.66
+170,Gek,Experimental,0.45,0.20,Medium Supply,2,3,Yellow,0.65
+171,Vy'keen,Scientific,0.40,0.24,Promising,2,1,Yellow,0.65
+172,Vy'keen,Industrial,0.43,0.21,Developing,2,2,Yellow,0.64
+173,Vy'keen,Experimental,0.47,0.16,Satisfactory,2,3,Yellow,0.63
+174,Gek,Ore Extraction,0.46,0.18,Medium Supply,2,1,Yellow,0.63
+175,Korvax,Nano-construction,0.43,0.20,Failing,1,1,Blue,0.63
+176,Korvax,Metal Processing,0.47,0.16,Satisfactory,2,2,Yellow,0.63
+177,Vy'keen,Alchemical,0.41,0.22,Developing,2,2,Yellow,0.63
+178,Vy'keen,Shipping,0.46,0.16,Satisfactory,2,1,Yellow,0.62
+179,Gek,Minerals,0.40,0.22,Developing,2,3,Blue,0.62
+180,Korvax,Fuel Generation,0.45,0.16,Destitute,1,3,Yellow,0.62
+181,Gek,Mass Production,0.51,0.10,Adequate,2,1,Yellow,0.61
+182,Korvax,Engineering,0.49,0.12,Opulent,3,1,Yellow,0.61
+183,Korvax,Experimental,0.41,0.19,Failing,1,3,Yellow,0.61
+184,Korvax,Mathematical,0.48,0.13,Sustainable,2,1,Green,0.60
+185,Vy'keen,Engineering,0.47,0.13,Sustainable,2,1,Yellow,0.60
+186,Vy'keen,Ore Processing,0.49,0.11,Opulent,3,2,Yellow,0.60
+187,Vy'keen,Commercial,0.49,0.11,Adequate,2,1,Yellow,0.60
+188,Vy'keen,Prospecting,0.45,0.14,Low Supply,1,3,Blue,0.59
+189,Korvax,Fuel Generation,0.41,0.17,Satisfactory,2,2,Yellow,0.58
+190,Korvax,Nano-construction,0.43,0.15,Satisfactory,2,3,Blue,0.58
+191,Korvax,Mass Production,0.44,0.13,Sustainable,2,2,Blue,0.57
+192,Vy'keen,Mathematical,0.43,0.14,Sustainable,2,2,Yellow,0.57
+193,Korvax,High Voltage,0.46,0.10,Adequate,2,3,Blue,0.57
+194,Korvax,Mass Production,0.42,0.14,Sustainable,2,1,Yellow,0.56
+195,Vy'keen,Engineering,0.46,0.10,Adequate,2,2,Yellow,0.56
+196,Korvax,Experimental,0.40,0.15,Satisfactory,2,3,Yellow,0.56
+197,Korvax,Prospecting,0.43,0.11,Adequate,2,3,Yellow,0.55
+198,Korvax,Mathematical,0.41,0.12,Adequate,2,2,Yellow,0.53
+199,Vy'keen,Prospecting,0.41,0.12,Opulent,3,1,Yellow,0.53
+200,Korvax,High Voltage,0.41,0.10,Unsuccessful,1,1,Blue,0.51
