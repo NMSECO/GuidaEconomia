@@ -1,6 +1,6 @@
 ---
 title: Guida all'economia di No Man's Sky
-author: "Autore originale: u/SeansCheckShirts, Traduttori: Francesco Tranquillo, Danilo Dell'Accio"
+author: "Autore originale: u/SeansCheckShirts, Traduttori: <a href=https://francescotranquillo.github.io/ >Francesco Tranquillo</a>, Danilo Dell'Accio"
 date: "28 agosto 2018"
 output:
   
